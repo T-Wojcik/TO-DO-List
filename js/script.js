@@ -1,14 +1,5 @@
 {
-  const tasks = [
-    {
-      content: "nagrać lekcje",
-      done: false,
-    },
-    {
-      content: "zjesc pierogi",
-      done: true,
-    },
-  ];
+  const tasks = [];
 
   const addNewTask = () => {
     const newTaskContent = document.querySelector(".js-newTask").value.trim();
