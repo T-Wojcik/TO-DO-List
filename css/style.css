@@ -12,3 +12,9 @@ body {
 body {
     background-color: #eee;
 }
+
+@media (max-width:768px){
+    body{
+        margin:10px;
+    }
+}

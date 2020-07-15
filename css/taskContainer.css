@@ -7,3 +7,9 @@
     padding: 0 20px 0 20px;
     border-bottom:2px solid #eee;
 }
+
+@media (max-width: 768px){
+    .taskContainer{
+        grid-template-columns: 1fr 80% 1fr;
+    }
+}
