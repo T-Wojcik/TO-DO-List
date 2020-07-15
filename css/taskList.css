@@ -3,19 +3,15 @@
     flex-direction: column;
     background-color: #fff;
     margin: 0;
-    flex-basis: 70px;
     list-style: none;
     padding: 0;
 }
 
 .taskList__element {
-    display:grid;
-    grid-template-columns: 1fr 90% 1fr;
-    justify-content:center;
+    display:flex;
+    justify-content:flex-start;
     align-items:center;
-    width: 100%;
     padding: 30px;
-    border-bottom:2px solid #eee;
 }
 
 .taskList__button {
@@ -29,6 +25,7 @@
     color:white;
     font-size:22px;
     justify-self:end;
+    cursor: pointer;
 }
 
 .taskList__button--green {
@@ -36,4 +33,5 @@
     order: -1;
     color:white;
     font-size:22px;
+    cursor: pointer;
 }

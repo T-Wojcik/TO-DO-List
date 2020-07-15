@@ -1,0 +1,9 @@
+.taskContainer{
+    display:grid;
+    grid-template-columns: 1fr 90% 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0 20px 0 20px;
+    border-bottom:2px solid #eee;
+}

@@ -47,13 +47,15 @@
 
     for (task of tasks) {
       htmlString += `
+      <div class="taskContainer">
       <li class="taskList__element"
       ${task.done ? " style=\"text-decoration:line-through\" " : ""}
       >
-      <button class="js-remove taskList__button taskList__button--red">🗑</button>
-      <button class="js-done taskList__button taskList__button--green">✔</button>
       ${task.content}
       </li>
+      <button class="js-remove taskList__button taskList__button--red">🗑</button>
+      <button class="js-done taskList__button taskList__button--green">${task.done ? innerHTML = "✔" : ""}</button>
+      </div>
       `;
     }
     document.querySelector(".js-tasks").innerHTML = htmlString;
