@@ -1,0 +1,12 @@
+.listContainer {
+    background-color: #eee;
+}
+
+.listContainer__header {
+    background-color: #fff;
+    padding: 17px;
+    border-bottom: 2px solid #eee;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
