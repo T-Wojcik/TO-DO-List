@@ -28,6 +28,8 @@
     font-size:22px;
     justify-self:end;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px){
@@ -42,6 +44,8 @@
     color:white;
     font-size:22px;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px){
