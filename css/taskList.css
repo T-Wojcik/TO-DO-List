@@ -1,5 +1,39 @@
 .taskList {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     margin: 0;
-    height: 70px;
+    flex-basis: 70px;
+    list-style: none;
+    padding: 0;
+}
+
+.taskList__element {
+    display:grid;
+    grid-template-columns: 1fr 90% 1fr;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    padding: 30px;
+    border-bottom:2px solid #eee;
+}
+
+.taskList__button {
+    width: 35px;
+    height: 35px;
+}
+
+.taskList__button--red {
+    background-color: crimson;
+    order: 1;
+    color:white;
+    font-size:22px;
+    justify-self:end;
+}
+
+.taskList__button--green {
+    background-color: green;
+    order: -1;
+    color:white;
+    font-size:22px;
 }

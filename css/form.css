@@ -29,4 +29,9 @@
     background-color: teal;
     color: white;
     font-size: 20px;
+    cursor:pointer;
+}
+
+.form__button:hover{
+    background-color:hsl(180, 100%, 30%);
 }
