@@ -1,6 +1,8 @@
 .listContainer {
     background-color: #eee;
+
 }
+
 .listContainer__header {
     background-color: #fff;
     padding: 17px;
@@ -10,8 +12,8 @@
     margin-bottom: 0;
 }
 
-@media (max-width: 768px){
-    .listContainer__header{
+@media (max-width: 768px) {
+    .listContainer__header {
         text-align: center;
     }
 }

@@ -46,6 +46,12 @@
   };
 
   const render = () => {
+    renderTasks();
+    bindEvents();
+    renderButtons();
+  };
+
+  const renderTasks = () => {
     let htmlString = "";
 
     for (task of tasks) {
@@ -62,7 +68,25 @@
       `;
     };
     document.querySelector(".js-tasks").innerHTML = htmlString;
-    bindEvents();
+  };
+
+  const renderButtons = () => {
+    let buttonsHtml = "";
+
+    for (task of tasks) {
+      if (task.content !== "") {
+        buttonsHtml =
+          `
+        <li class="buttonList__item"><button class="buttonList__button js-hideAllTasksButton">Ukryj ukończone</button></li>
+        <li class="buttonList__item"><button class="buttonList__button js-doneAllTasksButton">Ukończ wszystkie</button></li>
+         `;
+      } else {
+        buttonsHtml = "";
+      };
+    };
+
+    document.querySelector(".js-buttonsList").innerHTML = buttonsHtml;
+
   };
 
   const onFormSubmit = (event) => {
