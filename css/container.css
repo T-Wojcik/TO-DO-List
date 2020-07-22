@@ -4,6 +4,7 @@
 }
 
 .container__header {
+    font-size:32px;
     letter-spacing: 1px;
     color: #333;
 }
@@ -13,3 +14,11 @@
         text-align:center;
     }
 }
+
+.container__header--white{
+    background-color: #fff;
+    font-size:24px;
+    padding:25px 0 25px 15px;
+    margin:20px 0 0 0;
+}
+

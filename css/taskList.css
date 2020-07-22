@@ -9,17 +9,22 @@
 }
 
 .taskList__element {
-    display:flex;
-    justify-content:flex-start;
+    display:grid;
+    grid-template-columns: 5% 1fr 5%;
     align-items:center;
     padding: 30px;
+    border-bottom:2px solid #eee;
 }
 
+.taskList__element--hide{
+    display:none;
+}
 
 .taskList__button {
     width: 35px;
     height: 35px;
 }
+
 
 .taskList__button--red {
     background-color: crimson;
