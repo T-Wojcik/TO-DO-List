@@ -65,7 +65,7 @@
     hideDoneTasks = !hideDoneTasks
     render();
   };
-
+  
   const markAllTasksAsDone = (taskIndex) => {
     tasks = [
       ...tasks.slice(0, taskIndex),
@@ -84,7 +84,6 @@
     });
 
   };
-
 
   const render = () => {
     renderTasks();
