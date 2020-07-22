@@ -16,6 +16,12 @@
     border-bottom: 2px solid #eee;
 }
 
+@media (max-width: 768px) {
+    .taskList__element{
+        grid-template-columns: 25% 1fr 25%;
+    }
+}
+
 .taskList__element--hide {
     display: none;
 }
